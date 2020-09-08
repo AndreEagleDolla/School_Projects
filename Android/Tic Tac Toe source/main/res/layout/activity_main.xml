@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toBottomOf="@+id/txtGameStatus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:clickable="false"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn1_3"
+                android:layout_width="wrap_content"
+                android:layout_height="94dp"
+                app:layout_constraintBottom_toTopOf="@+id/txtArea"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtWidth"
+                app:layout_constraintVertical_bias="0.6"
+                android:onClick="onClick"/>
+
+            <Button
+                android:id="@+id/btn1_2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:onClick="onClick"
+                app:layout_constraintBottom_toTopOf="@+id/txtArea"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtWidth"
+                app:layout_constraintVertical_bias="0.6" />
+
+            <Button
+                android:id="@+id/btn1_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toTopOf="@+id/txtArea"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtWidth"
+                app:layout_constraintVertical_bias="0.6"
+                android:onClick="onClick"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn2_3"
+                android:layout_width="wrap_content"
+                android:layout_height="97dp"
+                app:layout_constraintBottom_toTopOf="@+id/txtArea"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtWidth"
+                app:layout_constraintVertical_bias="0.6"
+                android:onClick="onClick"/>
+
+            <Button
+                android:id="@+id/btn2_2"
+                android:layout_width="51dp"
+                android:layout_height="97dp"
+                app:layout_constraintBottom_toTopOf="@+id/txtArea"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtWidth"
+                app:layout_constraintVertical_bias="0.6"
+                android:onClick="onClick"/>
+
+            <Button
+                android:id="@+id/btn2_1"
+                android:layout_width="70dp"
+                android:layout_height="97dp"
+                app:layout_constraintBottom_toTopOf="@+id/txtArea"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtWidth"
+                app:layout_constraintVertical_bias="0.6"
+                android:onClick="onClick"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn3_3"
+                android:layout_width="wrap_content"
+                android:layout_height="98dp"
+                app:layout_constraintBottom_toTopOf="@+id/txtArea"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtWidth"
+                app:layout_constraintVertical_bias="0.6"
+                android:onClick="onClick"/>
+
+            <Button
+                android:id="@+id/btn3_2"
+                android:layout_width="13dp"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toTopOf="@+id/txtArea"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtWidth"
+                app:layout_constraintVertical_bias="0.6"
+                android:onClick="onClick"/>
+
+            <Button
+                android:id="@+id/btn3_1"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toTopOf="@+id/txtArea"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtWidth"
+                app:layout_constraintVertical_bias="0.6"
+                android:onClick="onClick"/>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/txtGameStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginBottom="200dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset Game"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtGameStatus"
+        app:layout_constraintVertical_bias="0.43" />
+</androidx.constraintlayout.widget.ConstraintLayout>
