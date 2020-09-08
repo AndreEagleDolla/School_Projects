@@ -1,2 +1,2 @@
 # SchoolProjects
-Web development projects and examples from my time and school 
+Web development projects and examples from my time at school 
