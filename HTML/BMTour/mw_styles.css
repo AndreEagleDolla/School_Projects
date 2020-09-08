@@ -1,0 +1,92 @@
+﻿/*
+   New Perspectives on HTML and CSS
+   Tutorial 3
+   Case Problem 2
+
+   Mountain Wheels Text and Color Style
+   Author: Ryan Berwald
+   Date:   6/23/2020
+
+   Filename:         mw_layout.css
+   Supporting Files: none
+
+*/
+
+body {
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+#articleheader {
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    kerning: 7px;
+}
+
+nav ul {
+    background-color: rgb(125, 120, 89);
+    line-height: 3em;
+    list-style-type: none;
+}
+
+nav ul a {
+    color: white;
+    color: rgba(255, 255, 255, .5);
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: rgb(131, 121, 36);
+    list-style-type: initial;
+    list-style-image: url(./wheelmarker.png);
+}
+
+nav ul a:hover {
+    color: yellow;
+    color: rgba(255, 255, 255, 1);
+}
+
+#leftsection p {
+    font-size: 22px;
+}
+
+#leftsection p:first-child {
+    text-transform: uppercase;
+}
+
+blockquote {
+    background-color: rgb(131, 121, 36);
+    color: white;
+    font-size: 16px;
+    font-family: 'Comic Sans MS', Times, Cursive;
+}
+
+blockquote p::before{
+    content: '"';
+}
+blockquote P::after{
+    content: '"';
+}
+
+#rightsection h1{
+    font-weight: normal;
+    font-size: 22px;
+    kerning: 3px;
+    text-align: center;
+}
+#rightsection h2{
+    font-size: 18px;
+    text-align: right;
+    font-weight: normal;
+}
+#rightsection p{
+    color: gray;
+    font-size: 14px;
+    text-align: justify;
+}
+
+footer address{
+    font-size: 16px;
+    font-style: normal;
+    text-align: center;
+}

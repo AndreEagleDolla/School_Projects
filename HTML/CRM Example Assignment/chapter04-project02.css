@@ -1,0 +1,156 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    ;
+}
+
+li a {
+    text-decoration: none;
+}
+
+#mainMenu {
+    height: 2em;
+    width: 100%;
+    background-color: #263238;
+    float: left;
+}
+
+#mainMenu ul, #secondaryMenu ul {
+    list-style: none;
+}
+
+#mainMenu ul li {
+    padding-right: 11.5em;
+}
+
+#mainMenu ul li a {
+    text-align: center;
+    color: #03a9f4;
+    float: right;
+    text-align: center;
+    padding: 6px 6px;
+}
+
+#mainMenu ul li a:hover, #secondaryMenu ul li a:hover {
+    color: white;
+    background-color: #ff3d00;
+}
+
+h1 {
+    height: 1em;
+    padding-left: 5em;
+    background-image: url(./images/header-background.png);
+    font-size: 36px;
+    padding-top: 1em;
+    padding-bottom: .4em;
+    color: white;
+}
+
+h1 span {
+    color: orangered;
+}
+
+#secondaryMenu ul {
+    background-color: #607D8b;
+    padding-left: 11em;
+}
+
+#secondaryMenu ul li {
+    display: inline;
+    list-style: none;
+    padding-left: .2em;
+}
+
+#secondaryMenu ul li a {
+    color: #03a9f4;
+}
+
+article#mainContact div img {
+    margin-top: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    width: 150px;
+}
+
+article#mainContact div h2 {
+    text-align: center;
+    font-size: 28px;
+}
+
+article#mainContact section {
+    border: 1px solid #ddd;
+    margin: 1em 11.5em 1em 11.5em;
+}
+
+article#mainContact section h3 {
+    background-image: url(./images/header-background.png);
+    padding: 1em;
+    color: white;
+    font-size: 24px;
+}
+
+article#mainContact section p {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-left: 1em;
+}
+
+article#mainContact section em {
+    color: gray;
+}
+
+.actions {
+    height: 3em;
+    background-color: #607d8b;
+}
+
+.actions li {
+    margin-top: .5em;
+    margin-left: 1em;
+    padding: 5px;
+    display: inline-block;
+    background-color: #ff3d00;
+    text-align: center;
+}
+
+.actions li a {
+    padding: 5px 5px 5px 5px;
+    color: white;
+}
+
+footer {
+    background-color: darkslategrey;
+    padding-left: 11.5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: white;
+}
+
+footer a {
+    color: #03a9f4;
+}
+
+.actionEdit {
+    background-image: url(./images/edit.png);
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+}
+
+.actionFlag {
+    background-image: url(./images/flag.png);
+    background-repeat: no-repeat;
+    background-position-x: 0px
+}
+
+#mainContact section a[href^=mailto] {
+    background: url(images/email.png) no-repeat 0 3px;
+    padding-left: 1em;
+}
+
+a[href^=tel] {
+    background: url(images/call.png) no-repeat 0 3px;
+    padding-left: 1em;
+}
